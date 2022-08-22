@@ -1,0 +1,36 @@
+.private {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+.private-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.private-left {
+  background: url("../image/private_image.jpg") no-repeat center/100%;
+}
+.private-right {
+  padding: 75px 0px 75px 60px;
+}
+.private-right__title {
+  font-family: "AkzidenzGroteskBQ";
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  max-width: 200px;
+}
+.private-right__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  max-width: 305px;
+  margin: 35px 0 60px;
+}
+.private-right-button__btn {
+  margin-right: 15px;
+}/*# sourceMappingURL=private.css.map */

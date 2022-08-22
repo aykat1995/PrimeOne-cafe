@@ -1,0 +1,21 @@
+.choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+.choose-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.choose-right {
+  background: url(../image/why_img.jpg) no-repeat center/cover;
+}
+.choose-left {
+  padding: 60px 60px 60px 250px;
+}
+.choose-left__title {
+  font-size: 50px;
+  color: #fff;
+}/*# sourceMappingURL=choose.css.map */

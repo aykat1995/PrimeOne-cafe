@@ -1,0 +1,33 @@
+.contact {
+  padding: 80px 0 20px;
+}
+.contact__title {
+  font-size: 50px;
+  margin-bottom: 35px;
+}
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact-item {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.contact-item:nth-child(n+3) {
+  margin-bottom: 0;
+}
+.contact-item__icon {
+  margin-right: 7px;
+}
+.contact-item__tel {
+  text-decoration: none;
+}
+.contact-item__link {
+  margin-right: 25px;
+}/*# sourceMappingURL=contact.css.map */

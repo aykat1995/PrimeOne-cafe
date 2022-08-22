@@ -1,0 +1,206 @@
+.header {
+  padding: 29px 0 33px 0;
+}
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-top-lang__item {
+  font-family: Bebas;
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.header-top-lang__item.active {
+  background-color: #000;
+  color: #fff;
+}
+.header-top__link {
+  font-family: "AkzidenzGroteskBQ";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+}
+.header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -12px 0 0 0;
+}
+.header-bottom__colomn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+.header-bottom-menu-list {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-bottom-menu__link {
+  font-family: "AkzidenzGroteskBQ";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-decoration: none;
+}
+.header-logo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.header-logo__text {
+  font-family: Bebas;
+  font-size: 10pxs;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+  display: block;
+}
+.header-logo__img {
+  display: inline-block;
+  margin: 13px 0 22px 0;
+}
+.header-menu {
+  position: fixed;
+  background-color: red;
+  width: 30%;
+  top: 10px;
+  left: -100%;
+  -webkit-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+}
+.header-menu.open {
+  left: 0;
+}
+.header-menu__item {
+  font-family: "AkzidenzGroteskBQ";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+.header-menu__item::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  -webkit-transition: width 0.3 ease-out;
+  transition: width 0.3 ease-out;
+}
+.header-menu__item:hover::after {
+  width: 100%;
+}
+.header-menu li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 3px 0;
+  list-style: none;
+}
+.header-menu li:last-child {
+  margin-bottom: 0;
+}
+.header-menu li:first-child {
+  padding-top: 10px;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .header-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .header-top-lang {
+    display: none;
+  }
+  .menu-burger {
+    z-index: 5;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .menu-burger:before, .menu-burger:after,
+.menu-burger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+  .menu-burger:before, .menu-burger:after {
+    content: "";
+  }
+  .menu-burger:before {
+    top: 0;
+  }
+  .menu-burger:after {
+    bottom: 0;
+  }
+  .menu-burger span {
+    top: 50%;
+    -webkit-transform: translate(0px, -50%);
+            transform: translate(0px, -50%);
+  }
+}
+@media (max-width: 890px) {
+  .header-logo__img {
+    max-width: 150px;
+    margin: 0 0;
+  }
+  .header-logo__text {
+    font-size: 9px;
+  }
+}
+@media (max-width: 780px) {
+  .header-logo {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .header-bottom__colomn:nth-child(2n+1) {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

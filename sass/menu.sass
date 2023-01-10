@@ -3,9 +3,8 @@
   &-wrapper
     display: flex
     justify-content: flex-start
-    flex-wrap: wrap
+    flex-wrap: no-wrap
   &-item  
-    max-width: 220px
     &__title
       max-width: 130px
       margin: 24px 0 30px
@@ -16,5 +15,22 @@
       display: block
       text-align: center
 
+@media (max-width: 930px)
+  .menu
+    padding: 45px
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-around
+    &-item
+      min-width: 35%
+      &__title
+        margin: 13px 0 17px
+      &__text
+        max-width: 220px
 
-
+@media (max-width: 550px)
+  .menu
+    padding: 20px
+    &-wrapper
+    &-item
+      min-width: 50%  

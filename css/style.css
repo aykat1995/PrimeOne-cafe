@@ -8521,7 +8521,7 @@ readers do not read off random characters that represent icons */
 }
 .header-top-lang__item {
   font-family: Bebas;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 25px;
   font-weight: 400;
   text-transform: uppercase;
@@ -8533,6 +8533,7 @@ readers do not read off random characters that represent icons */
 .header-top-lang__item.active {
   background-color: #000;
   color: #fff;
+  padding: 4px;
 }
 .header-top__link {
   font-family: "AkzidenzGroteskBQ";
@@ -8726,7 +8727,7 @@ readers do not read off random characters that represent icons */
           flex: 0 0 50%;
 }
 .private-left {
-  background: url("../image/private_image.jpg") no-repeat center/100%;
+  background: url("../image/private_image.jpg") top right/auto 100% no-repeat;
 }
 .private-right {
   padding: 75px 0px 75px 60px;
@@ -8751,6 +8752,37 @@ readers do not read off random characters that represent icons */
   margin-right: 15px;
 }
 
+@media (max-width: 780px) {
+  .private-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+  .private-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    padding: 40px 0 40px 30px;
+  }
+}
+@media (max-width: 430px) {
+  .private-left {
+    display: none;
+  }
+  .private-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 30px 20px;
+  }
+  .private-right__title {
+    font-size: 32px;
+  }
+  .private-right__text {
+    font-size: 16px;
+    margin: 20px 0 30px;
+  }
+}
 .menu {
   padding: 75px 0;
 }
@@ -8761,11 +8793,8 @@ readers do not read off random characters that represent icons */
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.menu-item {
-  max-width: 220px;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
 }
 .menu-item__title {
   max-width: 130px;
@@ -8780,6 +8809,34 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 
+@media (max-width: 930px) {
+  .menu {
+    padding: 45px;
+  }
+  .menu-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-item {
+    min-width: 35%;
+  }
+  .menu-item__title {
+    margin: 13px 0 17px;
+  }
+  .menu-item__text {
+    max-width: 220px;
+  }
+}
+@media (max-width: 550px) {
+  .menu {
+    padding: 20px;
+  }
+  .menu-item {
+    min-width: 50%;
+  }
+}
 .choose {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8798,7 +8855,7 @@ readers do not read off random characters that represent icons */
   padding: 60px 60px 60px 250px;
 }
 .choose-left__title {
-  font-size: 50px;
+  font-size: 44px;
   color: #fff;
 }
 
@@ -8900,4 +8957,10 @@ readers do not read off random characters that represent icons */
 .footer-wrapper__logo img {
   width: 156px;
   height: 39px;
+}
+
+@media (max-width: 430px) {
+  .btn {
+    padding: 10px 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

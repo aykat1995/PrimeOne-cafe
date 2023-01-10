@@ -11,7 +11,7 @@
 }
 .header-top-lang__item {
   font-family: Bebas;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 25px;
   font-weight: 400;
   text-transform: uppercase;
@@ -23,6 +23,7 @@
 .header-top-lang__item.active {
   background-color: #000;
   color: #fff;
+  padding: 4px;
 }
 .header-top__link {
   font-family: "AkzidenzGroteskBQ";

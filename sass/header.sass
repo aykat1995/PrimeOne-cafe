@@ -127,8 +127,14 @@
       content: ""
     &:before
       top: 0
+      &.active
+        rotate: 138deg
+        transform: translate(5px, 12px)
     &:after
       bottom: 0
+      &.active
+        rotate: -138deg
+        transform: translate(-5px, -12px)
     span
       top: 50%
       transform: translate(0px, -50%)   

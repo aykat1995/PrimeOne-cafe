@@ -2,6 +2,10 @@
   padding: 60px 0 0;
   background-color: #ebebeb;
 }
+.points__title {
+  margin-bottom: 60px;
+  font-size: 50px;
+}
 .points-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,4 +44,24 @@
 }
 .points-wrapper__title {
   margin-bottom: 28px;
+}
+
+@media (max-width: 890px) {
+  .points-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+  }
+  .points-wrapper-img {
+    width: 75px;
+    height: 75px;
+  }
+  .points-wrapper__title {
+    margin-bottom: 0;
+  }
+  .points-wrapper__item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=points.css.map */

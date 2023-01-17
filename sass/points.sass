@@ -1,6 +1,9 @@
 .points
   padding: 60px 0 0
   background-color: #ebebeb
+  &__title
+    margin-bottom: 60px
+    font-size: 50px
   &-wrapper
     display: flex
     justify-content: flex-start
@@ -26,3 +29,16 @@
       max-width: 300px    
     &__title
       margin-bottom: 28px  
+
+@media(max-width: 890px) 
+  .points
+    &-wrapper    
+      flex-direction: column
+      padding-left: 10px
+      &-img
+        width: 75px
+        height: 75px  
+      &__title
+        margin-bottom: 0
+      &__item
+        width: 100%    

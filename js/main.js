@@ -9,6 +9,7 @@ const pageWidth = document.documentElement.scrollWidth;
 menuBurger.addEventListener('click', function(e){
   e.preventDefault();
   headerMenu.classList.toggle('open');
+  
 })
 
 
@@ -30,3 +31,4 @@ langBox.addEventListener('click', function(e) {
 })
 
 });
+

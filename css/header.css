@@ -175,8 +175,18 @@
   .menu-burger:before {
     top: 0;
   }
+  .menu-burger:before.active {
+    rotate: 138deg;
+    -webkit-transform: translate(5px, 12px);
+            transform: translate(5px, 12px);
+  }
   .menu-burger:after {
     bottom: 0;
+  }
+  .menu-burger:after.active {
+    rotate: -138deg;
+    -webkit-transform: translate(-5px, -12px);
+            transform: translate(-5px, -12px);
   }
   .menu-burger span {
     top: 50%;

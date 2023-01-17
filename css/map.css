@@ -1,0 +1,52 @@
+.map-section {
+  height: 475px;
+  width: 100%;
+}
+.map-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.map-item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.map-right {
+  background-color: #000;
+  padding: 50px 60px;
+}
+.map-form__title {
+  color: #fff;
+  margin-bottom: 25px;
+}
+.map-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.map__btn {
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+}
+.map__input {
+  font-family: "PT Sans";
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #959595;
+  border: 2px solid #959595;
+  outline: none;
+  margin-bottom: 25px;
+  display: block;
+  background-color: #252525;
+  width: 60%;
+}
+.map__input:nth-child(3) {
+  height: 100px;
+}/*# sourceMappingURL=map.css.map */
